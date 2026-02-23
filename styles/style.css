@@ -2,4 +2,13 @@
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  padding: var(--padding-body, 10px);
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-body, 40px);
+  font-family: var(--font-family, 'IBM Plex mono'), sans-serif;
+  font-size: var(--font-size-text, 1.3);
+  line-height: var(--line-height-text, 1.3);
+  color: var(--color, #F1B2CE);
+  background-color: var(--backgrond-color, #000028);
 }
