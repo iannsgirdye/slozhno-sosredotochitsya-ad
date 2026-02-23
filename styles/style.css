@@ -33,7 +33,7 @@
 
 .decorated-zone {
   position: relative;
-  inline-size: 100vw;
+  inline-size: 100%;
   block-size: 100vh;
   padding: var(--padding-body, 10px);
 }
