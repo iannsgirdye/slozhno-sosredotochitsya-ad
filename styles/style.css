@@ -48,7 +48,7 @@
 
 .header__theme-menu-button { 
   padding: var(--padding-button, 0.083em 0.722em);
-  border: none;
+  border: 1px solid transparent;
   font-size: inherit;
   text-transform: lowercase;
   color: var(--color-button, #ff0070);
