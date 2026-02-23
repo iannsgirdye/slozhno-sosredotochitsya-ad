@@ -16,7 +16,7 @@
   --color-accent: var(--black);
   --color-title: var(--violet);
   --color-button: var(--red); 
-  
+
   --background-color: var(--black);
   --background-color-accent: var(--red);
   --background-image-header: url(../images/cover-image-dark.png);
@@ -33,11 +33,13 @@
   --gap-section-text: 20px;
   --gap-section-images: 10px;
 
-  --padding-body: 10px;
+  --padding-inline-body: 10px;
   --padding-block-end-section-title: 20px;
   --padding-block-end-part-title: 10px;
   --padding-block-end-subpart-title: 10px;
   --padding-button: 0.083em 0.722em;
+
+  --margin-block-header: 10px;
 }
 
 @media (width >= 768px) {
@@ -48,6 +50,8 @@
     --gap-main: 80px;
     --gap-section-images: 10px;
 
-    --padding-body: 20px;
+    --padding-inline-body: 20px;
+    
+    --margin-block-header: 20px;
   }
 }
