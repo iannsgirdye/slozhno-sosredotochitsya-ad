@@ -46,6 +46,22 @@
   border-block-end: var(--border);
 }
 
+.header__theme-menu {
+  align-self: end;
+  margin-block-start: 39px;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header__theme-menu-item {
+  display: flex;
+  justify-content: center;
+}
+
 .header__theme-menu-button { 
   padding: var(--padding-button, 0.083em 0.722em);
   border: 1px solid transparent;
