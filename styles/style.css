@@ -115,3 +115,9 @@
   background-color: var(--backgrond-color-accent, #ff0070);
   font-weight: 700;
 }
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-main, 50px);
+}
