@@ -12,5 +12,11 @@
   --light-black: #353430;
   --black: #000028;
 
-  
+  --font-family: 'IBM Plex mono';
+  --font-size-main: 1.125rem;
+  --font-size-header-title-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --font-size-header-title-desktop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+
+  --line-height-main: 1.3;
+  --line-height-header-title: 0.825;
 }
