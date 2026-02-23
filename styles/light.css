@@ -9,6 +9,9 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --color: var(--light-black);
+  --color-accent: var(--light-black);
+  --background-color-accent: var(--pink);
 }
 
 .theme-light .page {
