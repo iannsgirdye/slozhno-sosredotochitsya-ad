@@ -9,13 +9,16 @@
   --pink: #FF8DCB;
   --violet: #DB00FF;
   --red: #FF0070;
+  --dark-red: rgb(255 0 112 / 0.4);
   --light-black: #353430;
   --black: #000028;
+  --middle-black: rgb(53 52 48 / 0.4);
 
   --color: var(--light-pink-2);
   --color-accent: var(--black);
   --color-title: var(--violet);
   --color-button: var(--red); 
+  --color-button-hover: var(--dark-red);
 
   --background-color: var(--black);
   --background-color-accent: var(--red);
