@@ -13,12 +13,35 @@
   background-color: var(--backgrond-color, #000028);
 }
 
-.header,
-.footer {
+.decorated-zone {
   position: relative;
   inline-size: 100%;
-  block-size: calc(100vh - 2 * var(--margin-block-header, 10px));
-  margin-block: var(--margin-block-header, 10px);
+  block-size: calc(100vh - 2 * var(--margin-decorated-zone, 10px));
+  margin-block: var(--margin-decorated-zone, 10px);
+}
+
+.decorated-zone::before,
+.decorated-zone::after {
+  position: absolute;
+  content: '';
+  display: block;
+  inline-size: 25px;
+  block-size: 25px;
+  --border: 1px solid var(--color-button);
+}
+
+.decorated-zone::before {
+  top: 0;
+  right: 0;
+  border-block-start: var(--border);
+  border-inline-end: var(--border);
+}
+
+.decorated-zone::after {
+  bottom: 0;
+  left: 0;
+  border-inline-start: var(--border);
+  border-block-end: var(--border);
 }
 
 .header {
@@ -31,34 +54,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
-
-.header::before,
-.header::after,
-.footer::before,
-.footer::after {
-  position: absolute;
-  content: '';
-  display: block;
-  inline-size: 25px;
-  block-size: 25px;
-  --border: 1px solid var(--color-button);
-}
-
-.header::before,
-.footer::before {
-  top: 0;
-  right: 0;
-  border-block-start: var(--border);
-  border-inline-end: var(--border);
-}
-
-.header::after,
-.footer::after {
-  bottom: 0;
-  left: 0;
-  border-inline-start: var(--border);
-  border-block-end: var(--border);
 }
 
 .header__decoration {

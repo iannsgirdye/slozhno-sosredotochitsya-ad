@@ -39,7 +39,7 @@
   --margin-block-end-section-title: 20px;
   --margin-block-end-part-title: 10px;
   --margin-block-end-subpart-title: 10px;
-  --margin-block-header: 10px;
+  --margin-block-decorated-zone: 10px;
 }
 
 @media (width >= 768px) {
