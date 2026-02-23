@@ -12,6 +12,10 @@
   --light-black: #353430;
   --black: #000028;
 
+  --color: var(--light-pink-2);
+  --color-accent: var(--black);
+  --background-color-accent: var(--red);
+  
   --font-family: 'IBM Plex mono';
   --font-size-text: 1.125rem;
   --font-size-header-title: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
