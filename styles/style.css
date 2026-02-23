@@ -175,7 +175,7 @@
 .section__title {
   font-size: inherit;
   font-weight: bold;
-  color: var(--red, #ff0070);
+  color: var(--color-button, #ff0070);
 }
 
 .section__content,
