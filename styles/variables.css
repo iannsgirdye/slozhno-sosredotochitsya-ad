@@ -16,6 +16,7 @@
   --color-accent: var(--black);
   --color-title: var(--violet);
   --background-color-accent: var(--red);
+  --background-image-header: url(../images/cover-image-dark.png);
   
   --font-family: 'IBM Plex mono';
   --font-size-text: 1.125rem;
