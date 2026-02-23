@@ -284,3 +284,23 @@
     margin-block-start: 162px;
   }
 }
+
+@media (width >= 1024px) {
+  .header__title {
+    margin-block-start: 273px;
+  }
+
+  .header__description {
+    margin-block-start: 114px;
+  }
+
+  .section:nth-of-type(2) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .section:nth-of-type(2) .section__content {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
