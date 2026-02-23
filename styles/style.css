@@ -113,7 +113,7 @@
   margin-block-start: 55px;
   color: var(--color-accent, #000028);
   background-color: var(--backgrond-color-accent, #ff0070);
-  font-weight: 700;
+  font-weight: bold;
 }
 
 .content {
