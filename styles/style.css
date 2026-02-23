@@ -45,3 +45,16 @@
   border-inline-start: var(--border);
   border-block-end: var(--border);
 }
+
+.header__theme-menu-button { 
+  padding: var(--padding-button, 0.083em 0.722em);
+  border: none;
+  font-size: inherit;
+  text-transform: lowercase;
+  color: var(--color-button, #ff0070);
+  background-color: transparent;
+}
+
+.header__theme-menu-button:disabled {
+  border: 1px solid currentColor;
+}
