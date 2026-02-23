@@ -124,6 +124,9 @@
 
 .section__title {
   padding-block-end: var(--padding-block-end-section-title, 20px);
+  font-size: inherit;
+  font-weight: bold;
+  color: var(--red, #ff0070);
 }
 
 .section__content,
@@ -135,6 +138,10 @@
 
 .section-part__title {
   padding-block-end: var(--padding-block-end-part-title, 10px);
+  font-size: inherit;
+  font-weight: bold;
+  color: var(--color-accent, #000028);
+  background-color: var(--backgrond-color-accent, #ff0070);
 }
 
 .section-part:has(.section-subpart) .section-part__title {
@@ -147,6 +154,10 @@
 
 .section-subpart__title {
   padding-block-end: var(--padding-block-end-subpart-title, 10px);
+  font-size: inherit;
+  font-weight: normal;
+  color: var(--color-accent, #000028);
+  background-color: var(--backgrond-color-accent, #ff0070);
 }
 
 .section-part:has(img) .section-part__content {
