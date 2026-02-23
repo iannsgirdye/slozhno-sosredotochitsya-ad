@@ -184,3 +184,19 @@
 .footer__text {
   --text-shadow-position: 2px 2px;
 }
+
+@media (768px <= width < 1024px) {
+  .header__theme-menu {
+    margin-block-start: 192px;
+  }
+
+  .header__title {
+    margin-block-start: 173px;
+  }
+
+  .header__description {
+    inline-size: 50%;
+    align-self: end;
+    margin-block-start: 162px;
+  }
+}
