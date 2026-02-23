@@ -12,6 +12,25 @@
   background-color: var(--backgrond-color, #000028);
 }
 
+.link {
+  text-decoration: none;
+  text-shadow: 2px 2px 0 var(--backgrond-color-accent, #ff0070);
+  --border: 1px solid currentColor;
+}
+
+.link:hover {
+  border-block-end: var(--border);
+}
+
+.link:focus {
+  outline: none;
+}
+
+.link:focus-visible {
+  border: var(--border);
+  margin: -1px;
+}
+
 .decorated-zone {
   position: relative;
   inline-size: 100vw;
