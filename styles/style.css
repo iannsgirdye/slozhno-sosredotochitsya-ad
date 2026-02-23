@@ -12,3 +12,36 @@
   color: var(--color, #F1B2CE);
   background-color: var(--backgrond-color, #000028);
 }
+
+.header {
+  position: relative;
+  inline-size: 100%;
+  block-size: calc(100vh - 2 * var(--margin-block-header, 10px));
+  margin-block: var(--margin-block-header, 10px);
+  display: flex;
+  flex-direction: column;
+}
+
+.header::before,
+.header::after {
+  position: absolute;
+  content: '';
+  display: block;
+  inline-size: 25px;
+  block-size: 25px;
+  --border: 1px solid var(--color-button);
+}
+
+.header::before {
+  top: 0;
+  right: 0;
+  border-block-start: var(--border);
+  border-inline-end: var(--border);
+}
+
+.header::after {
+  bottom: 0;
+  left: 0;
+  border-inline-start: var(--border);
+  border-block-end: var(--border);
+}
