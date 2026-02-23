@@ -11,6 +11,7 @@
   */
   --color: var(--light-black);
   --color-accent: var(--light-black);
+  --color-title: var(--light-pink-1);
   --background-color-accent: var(--pink);
 }
 
