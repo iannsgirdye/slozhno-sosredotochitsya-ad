@@ -46,6 +46,25 @@
   border-block-end: var(--border);
 }
 
+.header__decoration {
+  align-self: end;
+  display: flex;
+  align-items: center;
+  color: var(--color-button, #ff0070);
+  line-height: 1.5;
+}
+
+.header__decoration::after {
+  display: inline-block;
+  margin-inline: 10px;
+  inline-size: 9px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  box-shadow: 0 0 4px 2px var(--color-button, #ff0070);
+  content: '';
+  background-color: var(--color-button, #ff0070);
+}
+
 .header__theme-menu {
   align-self: end;
   margin-block-start: 39px;
