@@ -14,8 +14,7 @@
 
   --font-family: 'IBM Plex mono';
   --font-size-main: 1.125rem;
-  --font-size-header-title-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  --font-size-header-title-desktop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  --font-size-header-title: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
 
   --line-height-main: 1.3;
   --line-height-header-title: 0.825;
@@ -34,6 +33,8 @@
 
 @media (width >= 768px) {
   :root {
+    --font-size-header-title: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+
     --gap-body: 60px;
     --gap-main: 80px;
     --gap-section-images: 10px;
