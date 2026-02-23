@@ -42,6 +42,7 @@
 
   --margin-block-end-part-title: 10px;
   --margin-block-end-subpart-title: 10px;
+  --margin-block-start-images-part-title: 30px;
 }
 
 @media (width >= 768px) {
@@ -53,5 +54,7 @@
     --gap-section-images: 10px;
 
     --padding-body: 20px;
+
+    --margin-block-start-images-part-title: 60px;
   }
 }
