@@ -121,3 +121,36 @@
   flex-direction: column;
   gap: var(--gap-main, 50px);
 }
+
+.section__title {
+  padding-block-end: var(--padding-block-end-section-title, 20px);
+}
+
+.section__content,
+.section-part__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-section-text, 20px);
+}
+
+.section-part__title {
+  padding-block-end: var(--padding-block-end-part-title, 10px);
+}
+
+.section-part:has(.section-subpart) .section-part__title {
+  --padding-block-end-part-title: 20px;
+}
+
+.section-part:has(img) .section-part__title {
+  margin-block-start: 30px;
+}
+
+.section-subpart__title {
+  padding-block-end: var(--padding-block-end-subpart-title, 10px);
+}
+
+.section-part:has(img) .section-part__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-section-images, 10px);
+}
