@@ -2,7 +2,6 @@
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
-  padding-inline: var(--padding-inline-body, 10px);
   display: flex;
   flex-direction: column;
   gap: var(--gap-body, 40px);
@@ -15,9 +14,9 @@
 
 .decorated-zone {
   position: relative;
-  inline-size: 100%;
-  block-size: calc(100vh - 2 * var(--margin-decorated-zone, 10px));
-  margin-block: var(--margin-decorated-zone, 10px);
+  inline-size: 100vw;
+  block-size: 100vh;
+  padding: var(--padding-body, 10px);
 }
 
 .decorated-zone::before,
@@ -31,15 +30,15 @@
 }
 
 .decorated-zone::before {
-  top: 0;
-  right: 0;
+  top: var(--padding-body, 10px);
+  right: var(--padding-body, 10px);
   border-block-start: var(--border);
   border-inline-end: var(--border);
 }
 
 .decorated-zone::after {
-  bottom: 0;
-  left: 0;
+  bottom: var(--padding-body, 10px);
+  left: var(--padding-body, 10px);
   border-inline-start: var(--border);
   border-block-end: var(--border);
 }
@@ -126,6 +125,7 @@
 }
 
 .content {
+  padding-inline: var(--padding-body, 10px);
   display: flex;
   flex-direction: column;
   gap: var(--gap-main, 50px);
