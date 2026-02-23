@@ -30,13 +30,13 @@
 
   --gap-body: 40px;
   --gap-main: 50px;
+  --gap-section: 20px;
   --gap-section-text: 20px;
   --gap-section-images: 10px;
 
   --padding-button: 0.083em 0.722em;
   --padding-body: 10px;
 
-  --margin-block-end-section-title: 20px;
   --margin-block-end-part-title: 10px;
   --margin-block-end-subpart-title: 10px;
 }

@@ -131,8 +131,13 @@
   gap: var(--gap-main, 50px);
 }
 
+.section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--gap-section, 20px);
+}
+
 .section__title {
-  margin-block-end: var(--margin-block-end-section-title, 20px);
   font-size: inherit;
   font-weight: bold;
   color: var(--red, #ff0070);
