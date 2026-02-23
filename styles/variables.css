@@ -16,6 +16,7 @@
   --color-accent: var(--black);
   --color-title: var(--violet);
   --color-button: var(--red); 
+  --background-color: var(--black);
   --background-color-accent: var(--red);
   --background-image-header: url(../images/cover-image-dark.png);
   
