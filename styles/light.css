@@ -12,6 +12,7 @@
   --color: var(--light-black);
   --color-accent: var(--light-black);
   --color-title: var(--light-pink-1);
+  --color-button: var(--light-black);
   --background-color-accent: var(--pink);
   --background-image-header: url(../images/cover-image-light.png);
 }
