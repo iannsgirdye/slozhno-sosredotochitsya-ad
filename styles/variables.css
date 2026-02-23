@@ -34,11 +34,11 @@
   --gap-section-images: 10px;
 
   --padding-inline-body: 10px;
-  --padding-block-end-section-title: 20px;
-  --padding-block-end-part-title: 10px;
-  --padding-block-end-subpart-title: 10px;
   --padding-button: 0.083em 0.722em;
-
+  
+  --margin-block-end-section-title: 20px;
+  --margin-block-end-part-title: 10px;
+  --margin-block-end-subpart-title: 10px;
   --margin-block-header: 10px;
 }
 
