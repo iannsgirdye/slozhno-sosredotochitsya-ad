@@ -196,6 +196,11 @@
 }
 
 @media (width >= 768px) {
+  .header__description {
+    inline-size: 50%;
+    align-self: end;
+  }
+
   .section {
     grid-template-columns: 1fr 2fr;
   }
@@ -241,8 +246,6 @@
   }
 
   .header__description {
-    inline-size: 50%;
-    align-self: end;
     margin-block-start: 162px;
   }
 }
