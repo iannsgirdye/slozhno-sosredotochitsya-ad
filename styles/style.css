@@ -241,6 +241,15 @@ ul.section-part__content {
     grid-template-columns: 1fr 2fr;
   }
 
+  .section:nth-of-type(2) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .section:nth-of-type(2) .section__content {
+    grid-row: 2 / 3;
+    grid-column: 1 / -1;
+  }
+
   .section-part__content:has(img) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -295,12 +304,7 @@ ul.section-part__content {
     margin-block-start: 114px;
   }
 
-  .section:nth-of-type(2) {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
   .section:nth-of-type(2) .section__content {
-    grid-column: 1 / -1;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
