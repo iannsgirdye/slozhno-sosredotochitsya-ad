@@ -84,8 +84,6 @@
 
 .header__description {
   margin-block-start: 55px;
-  color: var(--color-accent, #000028);
-  background-color: var(--background-color-accent, #ff0070);
   font-weight: bold;
 }
 

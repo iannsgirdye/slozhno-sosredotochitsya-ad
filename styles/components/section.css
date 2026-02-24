@@ -21,13 +21,6 @@ ul.section-part__content {
   gap: var(--gap-section-images, 10px);
 }
 
-.section-part__title,
-.section-subpart__title {
-  font-size: inherit;
-  color: var(--color-accent, #000028);
-  background-color: var(--background-color-accent, #ff0070);
-}
-
 .section-part__title {
   font-weight: bold;
 }

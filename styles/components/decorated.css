@@ -42,3 +42,9 @@
   color: var(--decorated-text-color);
   text-shadow: var(--decorated-text-shadow-position) 0 var(--background-color-accent, #ff0070);
 }
+
+.marker {
+  font-size: inherit;
+  color: var(--color-accent, #000028);
+  background-color: var(--background-color-accent, #ff0070);
+}
