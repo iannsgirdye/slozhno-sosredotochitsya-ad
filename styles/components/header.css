@@ -4,7 +4,7 @@
   flex-direction: column;
   background-image: var(
     --background-image-header,
-    url(../images/cover-image-dark.png)
+    url(/images/cover-image-dark.png)
   );
   background-repeat: no-repeat;
   background-size: cover;

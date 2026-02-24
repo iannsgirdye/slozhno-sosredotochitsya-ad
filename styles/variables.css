@@ -22,7 +22,7 @@
 
   --background-color: var(--black);
   --background-color-accent: var(--red);
-  --background-image-header: url(../images/cover-image-dark.png);
+  --background-image-header: url(/images/cover-image-dark.png);
   
   --font-family: 'IBM Plex mono';
   --font-size-text: 1.125rem;

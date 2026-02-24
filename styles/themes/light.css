@@ -17,7 +17,7 @@
   
   --background-color: var(--white);
   --background-color-accent: var(--pink);
-  --background-image-header: url(../images/cover-image-light.png);
+  --background-image-header: url(/images/cover-image-light.png);
 }
 
 .theme-light .page {
