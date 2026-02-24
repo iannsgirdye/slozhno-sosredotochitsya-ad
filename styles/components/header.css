@@ -1,0 +1,119 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  background-image: var(
+    --background-image-header,
+    url(../images/cover-image-dark.png)
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.header__decoration {
+  align-self: end;
+  display: flex;
+  align-items: center;
+  color: var(--color-button, #ff0070);
+  line-height: 1.5;
+}
+
+.header__decoration::after {
+  display: inline-block;
+  margin-inline: 10px;
+  inline-size: 9px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  box-shadow: 0 0 4px 2px var(--color-button, #ff0070);
+  content: '';
+  background-color: var(--color-button, #ff0070);
+}
+
+.header__theme-menu {
+  align-self: end;
+  margin-block-start: 39px;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header__theme-menu-item {
+  display: flex;
+  justify-content: center;
+}
+
+.header__theme-menu-button { 
+  --border: 1px solid var(--border-color);
+  --border-color: transparent;
+  border: var(--border);
+  padding: var(--padding-button, 0.083em 0.722em);
+  font-size: inherit;
+  text-transform: lowercase;
+  color: var(--color-button, #ff0070);
+  background-color: transparent;
+}
+
+.header__theme-menu-button:disabled {
+  --border-color: currentColor;
+}
+
+.header__theme-menu-button:hover {
+  --border-color: var(--color-button-hover, rgb(255 0 112 / 0.4));
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  border: none;
+  border-block-end: var(--border);
+  border-color: currentColor;
+  margin-block-start: 1px;
+}
+
+.header__title {
+  margin-block-start: 65px;
+  --text-shadow-position: 4px 4px;
+}
+
+.header__description {
+  margin-block-start: 55px;
+  color: var(--color-accent, #000028);
+  background-color: var(--background-color-accent, #ff0070);
+  font-weight: bold;
+}
+
+@media (width >= 768px) {
+  .header__description {
+    inline-size: 50%;
+    align-self: end;
+  }
+}
+
+@media (768px <= width < 1024px) {
+  .header__theme-menu {
+    margin-block-start: 192px;
+  }
+
+  .header__title {
+    margin-block-start: 173px;
+  }
+
+  .header__description {
+    margin-block-start: 162px;
+  }
+}
+
+@media (width >= 1024px) {
+  .header__title {
+    margin-block-start: 273px;
+  }
+
+  .header__description {
+    margin-block-start: 114px;
+  }
+}
