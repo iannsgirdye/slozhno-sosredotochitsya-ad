@@ -70,31 +70,31 @@ ul.section-part__content {
   .section-part__content:has(.section-part__image) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+      "sunset sunset ice-cream"
+      "tape   books  ice-cream"
+      "tape   street street   "
+    ;
   }
 
   .section-part__image-container:nth-child(1) {
-    grid-column: 1 / 3;
-    grid-row: 1 / 2;
+    grid-area: sunset;
   }
 
   .section-part__image-container:nth-child(2) {
-    grid-column: 3 / 4;
-    grid-row: 1 / 3;
+    grid-area: ice-cream;
   }
 
   .section-part__image-container:nth-child(3) {
-    grid-column: 1 / 2;
-    grid-row: 2 / 4;
+    grid-area: tape;
   }
 
   .section-part__image-container:nth-child(4) {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
+    grid-area: books;
   }
 
   .section-part__image-container:nth-child(5) {
-    grid-column: 2 / 4;
-    grid-row: 3 / 4;
+    grid-area: street;
   }
 }
 
