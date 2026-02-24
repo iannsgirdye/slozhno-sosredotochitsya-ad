@@ -199,6 +199,7 @@ ul.section-part__content {
 
 .section-part:has(img) .section-part__title {
   margin-block-start: var(--margin-block-start-images-part-title, 30px);
+  margin-block-end: var(--gap-section-images);
 }
 
 .section-subpart__title {
