@@ -1,8 +1,12 @@
 .link {
-  color: inherit;
-  text-decoration: none;
-  text-shadow: 2px 2px 0 var(--background-color-accent, #ff0070);
+  --decorated-text-font-size: inherit;
+  --decorated-text-font-weigth: normal;
+  --decorated-text-line-height: inherit;
+  --decorated-text-color: inherit;
+  --decorated-text-shadow-position: 2px 2px;
+  
   --border: 1px solid currentColor;
+  text-decoration: none;
 }
 
 .link:hover {
