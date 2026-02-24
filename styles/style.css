@@ -185,35 +185,35 @@ ul.section-part__content {
   gap: var(--gap-section-text, 20px);
 }
 
-.section-part__title {
-  margin-block-end: var(--margin-block-end-part-title, 10px);
+.section-part:has(img),
+.section-part__content:has(img) {
+  gap: var(--gap-section-images, 10px);
+}
+
+.section-part__title,
+.section-subpart__title {
   font-size: inherit;
-  font-weight: bold;
   color: var(--color-accent, #000028);
   background-color: var(--background-color-accent, #ff0070);
 }
 
-.section-part:has(.section-subpart) .section-part__title {
-  --margin-block-end-part-title: 20px;
+.section__content:not(.section-part) .section-part__title {
+  margin-block-end: var(--margin-block-end-part-title, 10px);
 }
 
-.section-part:has(img) .section-part__title {
-  margin-block-start: var(--margin-block-start-images-part-title, 30px);
-  margin-block-end: var(--gap-section-images);
+.section-part__title {
+  font-weight: bold;
 }
 
 .section-subpart__title {
-  margin-block-end: var(--margin-block-end-subpart-title, 10px);
-  font-size: inherit;
+  margin-block-end: var(--margin-block-end-subpart-title);
   font-weight: normal;
-  color: var(--color-accent, #000028);
-  background-color: var(--background-color-accent, #ff0070);
 }
 
+.section-part__title 
 .section-part__content:has(img) {
   display: flex;
   flex-direction: column;
-  gap: var(--gap-section-images, 10px);
 }
 
 .section-part__image {
@@ -237,7 +237,7 @@ ul.section-part__content {
     align-self: end;
   }
 
-  .section {
+  .section:not(:has(img)) {
     grid-template-columns: 1fr 2fr;
   }
 
