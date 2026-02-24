@@ -1,4 +1,5 @@
 .header {
+  position: relative;
   display: flex;
   flex-direction: column;
   background-image: var(
@@ -11,6 +12,7 @@
 }
 
 .header__decoration {
+  position: absolute;
   align-self: end;
   display: flex;
   align-items: center;
@@ -31,7 +33,7 @@
 
 .header__theme-menu {
   align-self: end;
-  margin-block-start: 39px;
+  margin-block-start: calc(75px - var(--padding-body));
 }
 
 .header__theme-menu-list {
@@ -96,7 +98,7 @@
 
 @media (768px <= width < 1024px) {
   .header__theme-menu {
-    margin-block-start: 192px;
+    margin-block-start: calc(192px - var(--padding-body));
   }
 
   .header__title {
@@ -109,6 +111,15 @@
 }
 
 @media (width >= 1024px) {
+  .header__theme-menu {
+    align-self: center;
+    margin-block-start: 0;
+  }
+
+  .header__theme-menu-list {
+    flex-direction: row;
+  }
+
   .header__title {
     margin-block-start: 273px;
   }
